@@ -17,9 +17,11 @@ En ```index.html``` inserimos un pequeno esqueleto html5:
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Pila frontend elemental</title>
+
+    <link src="css/app.css">
 </head>
 <body>
-    <script src="index.js"></script>
+    <script src="js/app.js"></script>
 </body>
 </html>
 ```
