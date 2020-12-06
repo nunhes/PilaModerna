@@ -3,7 +3,7 @@
 
 ## Pila esencial de ferramentas para proxectos front-end.
 
-Outra opción é ir ó fundamental e construír a nosa solución a partires de aí. 🚀
+🚀
 
 No cartafol do noso proxecto ```pilafrontend``` crearemos os arquivos ```index.html``` e ```index.js```
 
