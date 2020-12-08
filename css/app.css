@@ -2,3 +2,9 @@ body {
     background: #66ccff;
     font-family: sans-serif;
 }
+
+.main {
+    /* Hacer referencia a un archivo de imagen */
+    background: url('./images/background.png');
+    color: red;
+  }
