@@ -1,0 +1,5 @@
+# Ignore everything
+**/*.js
+
+# now don't ignore /src
+!src/**/*.js

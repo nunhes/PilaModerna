@@ -6,20 +6,33 @@
   "author": "nunhes",
   "license": "MIT",
   "scripts": {
-    "start": "parcel -p 3000 index.html --open",
-    "build": "parcel build index.html",
-    "deploy": "cd dist && surge",
-    "redeploy": "cd dist && surge --domain",
-    "teardown": "cd dist && surge teardown"
+    "build": "parcel build --no-cache --public-url / src/index.html",
+    "clear-build-cache": "rm -rf .cache/ dist/",
+    "prestart": "npm run clear-build-cache",
+    "start": "parcel -p 8000 src/index.html --open",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "devDependencies": {
-    "autoprefixer": "^10.0.4",
+    "@fullhuman/postcss-purgecss": "^2.3.0",
+    "autoprefixer": "9",
     "babel-cli": "^6.26.0",
     "babel-preset-env": "^1.7.0",
-    "node-sass": "^5.0.0",
-    "parcel-bundler": "^1.12.4"
+    "eslint": "^7.7.0",
+    "eslint-config-prettier": "^6.11.0",
+    "eslint-plugin-prettier": "^3.1.4",
+    "parcel-bundler": "^1.12.4",
+    "parcel-plugin-custom-dist-structure": "^1.1.14",
+    "postcss": "7",
+    "postcss-cli": "^8.3.0",
+    "postcss-nested": "^5.0.2",
+    "posthtml-modules": "^0.6.4",
+    "prettier": "^2.0.5",
+    "sass": "^1.26.10",
+    "tailwindcss": "npm:@tailwindcss/postcss7-compat"
   },
   "dependencies": {
-    "normalize.css": "^8.0.1"
+    "normalize.css": "^8.0.1",
+    "parcel": "^2.0.0-beta.1",
+    "posthtml-img-autosize": "^0.1.6"
   }
 }
