@@ -22,7 +22,7 @@
     "eslint-plugin-prettier": "^3.1.4",
     "parcel-bundler": "^1.12.4",
     "parcel-plugin-custom-dist-structure": "^1.1.14",
-    "postcss": "7",
+    "postcss": "8",
     "postcss-cli": "^8.3.0",
     "postcss-nested": "^5.0.2",
     "posthtml-modules": "^0.6.4",
